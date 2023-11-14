@@ -31,11 +31,10 @@ protected:
 
     const auto layout = gurka::detail::map_to_coordinates(ascii_map, gridsize);
     map = gurka::buildtiles(layout, ways, {}, {}, "test/data/car_restrictions");
-    std::cout << gurka::dump_geojson_graph(map) << std::endl;
   }
 };
 
-gurka::map CarRestrictionTest::map = {};
+
 
 TEST_P(CarRestrictionTest, NotAllowed) {
   std::string option, v;

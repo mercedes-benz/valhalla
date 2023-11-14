@@ -20,7 +20,8 @@ if(ENABLE_DATA_TOOLS)
   foreach(FULLFILENAME IN ITEMS ${TEST_FILES})
     file(RELATIVE_PATH FILENAME "${CMAKE_CURRENT_LIST_DIR}" ${FULLFILENAME})
     string(REGEX REPLACE "test_(.*).cc" "gurka_\\1" TESTNAME ${FILENAME})
-    add_executable(${TESTNAME} EXCLUDE_FROM_ALL ${FILENAME})
+    add_executable(${TESTNAME} EXCLUDE_FROM_ALL ${FILENAME}
+            test_car_restrictions.cc)
     set_target_properties(${TESTNAME} PROPERTIES FOLDER "Tests")
     target_compile_definitions(${TESTNAME} PRIVATE
       VALHALLA_SOURCE_DIR="${VALHALLA_SOURCE_DIR}/"
