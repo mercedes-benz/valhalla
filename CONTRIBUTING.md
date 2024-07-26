@@ -1,4 +1,4 @@
-We welcome contributions to Valhalla. If you would like to report an issue, or even better fix an existing one, please use the [Valhalla issue tracker](https://github.com/valhalla/valhalla/issues) on GitHub.
+We welcome contributions to Valhalla.If you would like to report an issue, or even better fix an existing one, please use the [Valhalla issue tracker](https://github.com/valhalla/valhalla/issues) on GitHub.
 
 There are many ways to make meaningful contributions to the project:
 - file issues & bugs with **clear and easily reproducible instructions**
