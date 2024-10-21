@@ -572,6 +572,8 @@ Cost AutoCost::TransitionCost(const baldr::DirectedEdge* edge,
       turn_cost += kTCRamp;
       if (edge->roundabout())
         turn_cost += kTCRoundabout;
+      if (node->traffic_signal())
+        turn_cost += 0.5f;
     }
 
     float seconds = turn_cost;
